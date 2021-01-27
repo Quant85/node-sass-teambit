@@ -49,16 +49,24 @@
           <section class="info-header">
             <div class="info-text">
               <h1 class="title" v-text="header.title"></h1>
-              <h3 class="subtitle" v-text="header.subtitle"></h3>
+              <p class="subtitle" v-text="header.subtitle"></p>
               <!-- /.subtitle -->
-              
-              <a :href="header.btnLink[0]" v-text="header.btnTxt[0]"></a>
-              <span>or</span>
-              <a :href="header.btnLink[1]" v-text="header.btnTxt[1]"></a>
-              <a href="#">or use your email address </a>
+              <div class="btn-wrap">
+                <a class="btn btn-sign-up" :href="header.btnLink[0]">
+                  <img class="google-logo" :src="header.btnImg[0]" alt="">
+                  <span v-text="header.btnTxt[0]"></span>
+                  </a>
+                <span>or</span>
+                <a class="btn btn-sign-up" :href="header.btnLink[1]">
+                  <img class="google-logo" :src="header.btnImg[1]" alt="">
+                  <span v-text="header.btnTxt[1]"></span>
+                </a>
+              </div>
+
+              <a class="email-link" href="#">or use your email address <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
             <!-- /.info-text -->
-            <img class="img-box"  src="" alt="">
+            <img class="img-box" :src="header.headerImg" alt="">
             <!-- /.img-box -->
           </section>
           <!-- /.info-header -->

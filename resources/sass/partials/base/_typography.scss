@@ -10,3 +10,14 @@ $bg-btn-sign: #30488f;
 $btn-border-color: #30488f;
 
 $bg-btn-hover: #30488f;
+
+$p-size: 1.4rem;
+$p-weight: 400;
+$p-line-height: 2rem;
+
+@mixin text-set($size:$p-size, $weight:$p-weight, $line-height:$p-line-height) {
+  font-size:$size;
+  font-weight: $weight;
+  line-height: $line-height;
+  
+}

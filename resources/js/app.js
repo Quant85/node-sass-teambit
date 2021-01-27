@@ -21,11 +21,11 @@ let navbar = new Vue({
       },
       header:{
         title:"Understand, recognize and develop your people",
-        subtitle:"Understand, recognize and develop your people",
+        subtitle:"Teambit helps teams create a high performing culture with regular feedback.",
         btnTxt:["Sign up with Google","Sign up with Slack"],
-        btnImg:["public/assets/img/navbar/google-logo.svg","public/assets/img/navbar/slack-logo.svg"],
+        btnImg:["public/assets/img/header/google-logo.svg","public/assets/img/header/slack-logo.svg"],
         btnLink:["https://www.google.com/accounts/Login","https://www.google.com/accounts/Login"],
-        headerImg:"public/assets/img/navbar/illustration-main.jpg",
+        headerImg:"public/assets/img/header/illustration-main.jpg",
       }
 
     }

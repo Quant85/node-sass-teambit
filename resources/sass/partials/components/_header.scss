@@ -4,4 +4,80 @@
 
 header {
   @include section-set($bgColor:$primary-bg-color);
+
+  .info-header{
+    display: flex;
+    justify-content: center;
+    @include for-tablet {
+      @include flex($direction:column, $wrap:wrap);
+      align-content: center;
+    }
+  
+    .info-text{
+      
+      @include col($minOrmax:max-width,$num:6);
+
+      h1{
+        font-size: 2.6rem;
+        margin-bottom: 30px;
+        line-height: 1.4;
+        font-weight: 600;
+      }
+
+      p{
+        margin-bottom: 40px;
+      }
+
+      .btn-wrap{
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+        .btn{
+          @include btn;
+          align-items: center;
+          margin-bottom: 35px;
+        }
+
+        span{
+          margin: 0px 6px 35px 6px;
+        }
+      }
+      .email-link {
+        display: block;
+        text-decoration: none;
+      }
+
+      @include for-tablet {
+        @include col($minOrmax:min-width, $num:10);
+        text-align: center;
+        padding: 0px 40px;
+        .btn-wrap{
+          justify-content: center;
+        }
+      }
+
+      @include for-phone {
+        @include col($minOrmax:min-width, $num:10);
+        text-align: center;
+        padding: 0px 40px;
+        .btn-wrap {
+          justify-content: center;
+        }
+      }
+
+      
+    }
+
+
+    .img-box{
+      @include col($minOrmax:max-width,$num:6);
+      @include for-tablet {
+        @include col($minOrmax:min-width, $num:10);
+      }
+
+      @include for-phone {
+        @include col($minOrmax:min-width, $num:10);
+      }
+    }
+  }
 }

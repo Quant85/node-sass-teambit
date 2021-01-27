@@ -8,14 +8,14 @@ ul {
   }
 }
 
-@mixin flex-col-wrap {
-  display: flex;
-  flex-flow: column wrap;
+p{
+  @include text-set($size:$p-size, $weight:$p-weight, $line-height:$p-line-height);
 }
 
-@mixin flex-row-wrap {
+//questa sostituisce le due precedenti
+@mixin flex($direction:row,$wrap:wrap) {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: $direction $wrap;
 }
 
 @mixin btn-transition-hover{
@@ -27,4 +27,26 @@ ul {
   padding: $pd;
   background-color: $bgColor;
   color: $color;
+}
+
+//genero variabili
+@mixin col($minOrmax:width, $num) {
+  #{$minOrmax}: (100% / $colums * $num);
+}
+
+@mixin btn ($pd-bt: 0px 20px,){
+  display: inline-block;
+  line-height: 35px;
+  white-space: nowrap;
+  padding: $pd-bt;
+  color: #fff;
+  font-size: .875rem;
+  background: #30488f;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  text-decoration: none;
+  img{
+    height: 18px;
+    vertical-align: text-bottom;
+  }
 }

@@ -5,7 +5,7 @@
 
 
 nav{
-  @include flex-row-wrap;
+  @include flex();
   justify-content: space-between;
   min-height: 75px;
   width: 100%;
@@ -14,12 +14,12 @@ nav{
   padding: 0 20px ;
 
   .navbar-rigth{
-  @include flex-row-wrap;
+  @include flex();
   align-content: center;
   justify-content: end;
   
     .navbar-items{
-    @include flex-row-wrap;
+    @include flex();
     align-content: center;
 
     @include for-tablet {
@@ -30,7 +30,7 @@ nav{
       display: none;
     }
       .navbar-item{
-        @include flex-row-wrap;
+        @include flex();
         align-content: center;
         padding-left: 22px;
         text-transform: capitalize;
