@@ -1,3 +1,27 @@
-.logoSmall{
+@import "../mediaqueries/_mediaquery";
+@import "../base/variables";
+
+.logoSmall {
   display: none;
+
+
+  @include for-tablet {
+    display: flex;
+  }
+
+  @include for-phone {
+    display: flex;
+  }
+}
+
+.logoTxt {
+  display: flex;
+
+  @include for-tablet {
+    display: none;
+  }
+
+  @include for-phone {
+    display: none;
+  }
 }

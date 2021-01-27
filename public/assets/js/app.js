@@ -18,7 +18,9 @@ var navbar = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
       logoSmall: "public/assets/img/navbar/logo-small.svg",
       logoTxt: "public/assets/img/navbar/logo.svg"
     },
-    navbarItems: {}
+    navbarItems: {
+      item1: ""
+    }
   }
 });
 

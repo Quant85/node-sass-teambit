@@ -9,7 +9,7 @@ let navbar = new Vue({
         logoTxt:"public/assets/img/navbar/logo.svg"
       },
       navbarItems:{
-        
+        item1:""
       }
     }
 
