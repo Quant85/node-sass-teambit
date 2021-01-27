@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.logoSmall {
+  display: none;
+}
+
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6134,6 +6138,10 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
 }
 
+.logoSmall {
+  display: none;
+}
+
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -12266,6 +12274,10 @@ nav {
   border: 1px solid red;
 }
 
+.logoSmall {
+  display: none;
+}
+
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -18396,6 +18408,10 @@ header {
   background-color: #ffffff;
 }
 
+.logoSmall {
+  display: none;
+}
+
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -24520,6 +24536,10 @@ readers do not read off random characters that represent icons */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.logoSmall {
+  display: none;
 }
 
 /*!

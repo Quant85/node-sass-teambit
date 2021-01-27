@@ -15,7 +15,8 @@ var navbar = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: "#navbar-top",
   data: {
     logo: {
-      logoSmall: "public/assets/img/navbar/logo-small.svg"
+      logoSmall: "public/assets/img/navbar/logo-small.svg",
+      logoTxt: "public/assets/img/navbar/logo.svg"
     },
     navbarItems: {}
   }
