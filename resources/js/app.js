@@ -13,7 +13,13 @@ let navbar = new Vue({
         item2:"pricing",
         item3:"blog",
         item4:"sign in",
-      }
+      },
+      btnSignUp:{
+        imgTxt:"public/assets/img/navbar/google-logo.svg",
+        txt:"Sign up",
+        link:"https://www.boolean.careers/",
+      },
+
     }
 
   });

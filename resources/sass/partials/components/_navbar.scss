@@ -16,15 +16,22 @@ nav{
   .navbar-rigth{
   @include flex-row-wrap;
   align-content: center;
-  justify-content: flex-end;
-  width: 80%;
+  justify-content: end;
   
     .navbar-items{
     @include flex-row-wrap;
     align-content: center;
 
+    @include for-tablet {
+      display: none;
+    }
+
+    @include for-phone {
+      display: none;
+    }
       .navbar-item{
         @include flex-row-wrap;
+        align-content: center;
         padding-left: 22px;
         text-transform: capitalize;
         @extend %fa-icon;
@@ -33,6 +40,37 @@ nav{
           padding-left: 5px;
           content: fa-content($fa-var-chevron-down);
         }
+      }
+
+      a.btn-sign-up {
+        display: inline-block;
+        line-height: 35px;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 0 18px;
+
+        &:hover {
+          background-color: bg-btn-hover;
+        }
+
+        .google-logo {
+          vertical-align: middle;
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+
+
+    span.mobile-menu {
+
+      display: none;
+      @include for-tablet {
+        display: inline-block;
+      }
+      @include for-phone {
+        display: inline-block;
       }
     }
 

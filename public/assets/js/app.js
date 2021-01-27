@@ -23,6 +23,11 @@ var navbar = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
       item2: "pricing",
       item3: "blog",
       item4: "sign in"
+    },
+    btnSignUp: {
+      imgTxt: "public/assets/img/navbar/google-logo.svg",
+      txt: "Sign up",
+      link: "https://www.boolean.careers/"
     }
   }
 });

@@ -24,26 +24,33 @@
 
   <body>
     <div id="teambit-app" class="app-wrap">
-      <nav id="navbar-top" >
-        <img :src="value" alt="" :class="name" v-for="(value, name) in logo">
-        
-        <div class="navbar-rigth">
-          <ul class="navbar-items">
-            <a class="navbar-item" href="#" v-for="(value, name) in navbarItems">
-              <li class="icon" v-text="value"></li>
-            </a>
-          </ul>
-          <button class="btn btn-signu-p">
-            
-            
-          </button>
-          <i class="fas fa-bars"></i>
-        </div>
-        <!-- /.navbar-rigth -->
-      </nav>
-      <header>
+      <div class="container-app">
+        <nav id="navbar-top" >
+          <img :src="value" alt="" :class="name" v-for="(value, name) in logo">
+          
+          <div class="navbar-rigth">
+            <ul class="navbar-items">
+              <a class="navbar-item" href="#" v-for="(value, name) in navbarItems">
+                <li class="icon" v-text="value"></li>
+              </a>
+              <a class="btn btn-sign-up" :src="btnSignUp.link">
+                <img class="google-logo" :src="btnSignUp.imgTxt" alt="">
+                <span v-text="btnSignUp.txt"></span>
+              </a>
+            </ul>
   
-      </header>
+            <span class="mobile-menu" href="#">
+              <i class="fas fa-bars"></i>
+            </span>
+          </div>
+          <!-- /.navbar-rigth -->
+        </nav>
+        <header>
+    
+        </header>
+
+      </div>
+      <!-- /.container -->
     </div>
     <!-- /.app_wrap -->
 

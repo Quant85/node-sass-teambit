@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/** esempio **/
+/* media  */
+/* media  */
 .logoSmall {
   display: none;
 }
@@ -28,6 +29,7 @@
   }
 }
 
+/* media  */
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6178,22 +6180,13 @@ ul a {
   text-decoration: none;
 }
 
-.icon::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* media  */
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -12342,17 +12335,27 @@ nav .navbar-rigth {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  justify-content: flex-end;
-  width: 80%;
+  justify-content: end;
 }
 nav .navbar-rigth .navbar-items {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
 }
+@media (min-width: 551px) and (max-width: 998px) {
+  nav .navbar-rigth .navbar-items {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  nav .navbar-rigth .navbar-items {
+    display: none;
+  }
+}
 nav .navbar-rigth .navbar-items .navbar-item {
   display: flex;
   flex-flow: row wrap;
+  align-content: center;
   padding-left: 22px;
   text-transform: capitalize;
 }
@@ -12360,14 +12363,59 @@ nav .navbar-rigth .navbar-items .navbar-item:first-child::after {
   padding-left: 5px;
   content: "";
 }
+nav .navbar-rigth .navbar-items a.btn-sign-up {
+  display: inline-block;
+  line-height: 35px;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0 18px;
+}
+nav .navbar-rigth .navbar-items a.btn-sign-up:hover {
+  background-color: bg-btn-hover;
+}
+nav .navbar-rigth .navbar-items a.btn-sign-up .google-logo {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+nav .navbar-rigth span.mobile-menu {
+  display: none;
+}
+@media (min-width: 551px) and (max-width: 998px) {
+  nav .navbar-rigth span.mobile-menu {
+    display: inline-block;
+  }
+}
+@media (max-width: 550px) {
+  nav .navbar-rigth span.mobile-menu {
+    display: inline-block;
+  }
+}
 
+/* media  */
 header {
   background-color: #ffffff;
 }
 
+/* media  */
+/* media  */
 #teambit-app {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
   width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#teambit-app .container-app {
+  width: calc((922 / 1170) * 100%);
+}
+@media (min-width: 551px) and (max-width: 998px) {
+  #teambit-app .container-app {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  #teambit-app .container-app {
+    width: 100%;
+  }
 }
