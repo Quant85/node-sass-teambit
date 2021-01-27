@@ -27,7 +27,15 @@ var navbar = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
     btnSignUp: {
       imgTxt: "public/assets/img/navbar/google-logo.svg",
       txt: "Sign up",
-      link: "https://www.boolean.careers/"
+      link: "https://www.google.com/accounts/Login"
+    },
+    header: {
+      title: "Understand, recognize and develop your people",
+      subtitle: "Understand, recognize and develop your people",
+      btnTxt: ["Sign up with Google", "Sign up with Slack"],
+      btnImg: ["public/assets/img/navbar/google-logo.svg", "public/assets/img/navbar/slack-logo.svg"],
+      btnLink: ["https://www.google.com/accounts/Login", "https://www.google.com/accounts/Login"],
+      headerImg: "public/assets/img/navbar/illustration-main.jpg"
     }
   }
 });
