@@ -55,15 +55,20 @@ nav{
 
         &:hover {
           background-color: $bg-btn-hover;
-          @include btn-transition-hover;
-          color: #ffffff;
+          @include btn-transition-hover; 
+          color: #fff;
+
+            .google-logo{
+              filter: brightness(100);
+            }
         }
 
         .google-logo {
           vertical-align: text-bottom;
           width: 18px;
           height: 18px;
-          box-shadow: inset #ffffff;
+
+
         }
       }
     }
