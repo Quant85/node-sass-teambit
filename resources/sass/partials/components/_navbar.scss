@@ -9,8 +9,8 @@ nav{
   justify-content: space-between;
   min-height: 75px;
   width: 100%;
-  background-color: $primaryBgColor;
-  border: 1px solid red;
+  background-color: $primary-bg-color;
+  border-bottom: 1px solid #bdb5af;
   padding: 0 20px ;
 
   .navbar-rigth{
@@ -34,6 +34,7 @@ nav{
         align-content: center;
         padding-left: 22px;
         text-transform: capitalize;
+        color: $text-color-primary;
         @extend %fa-icon;
         @extend .fas;
         &:first-child::after {
@@ -48,15 +49,21 @@ nav{
         white-space: nowrap;
         vertical-align: middle;
         padding: 0 18px;
+        margin-left: 20px;
+        border: 1px solid $btn-border-color;
+        border-radius: 7px;
 
         &:hover {
-          background-color: bg-btn-hover;
+          background-color: $bg-btn-hover;
+          @include btn-transition-hover;
+          color: #ffffff;
         }
 
         .google-logo {
-          vertical-align: middle;
+          vertical-align: text-bottom;
           width: 18px;
           height: 18px;
+          box-shadow: inset #ffffff;
         }
       }
     }
@@ -64,8 +71,11 @@ nav{
 
 
     span.mobile-menu {
-
       display: none;
+
+      &:hover{
+        background-color: $bg-btn-hover;
+      }
       @include for-tablet {
         display: inline-block;
       }

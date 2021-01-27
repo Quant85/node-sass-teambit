@@ -12328,7 +12328,7 @@ nav {
   min-height: 75px;
   width: 100%;
   background-color: #ffffff;
-  border: 1px solid red;
+  border-bottom: 1px solid #bdb5af;
   padding: 0 20px;
 }
 nav .navbar-rigth {
@@ -12358,6 +12358,7 @@ nav .navbar-rigth .navbar-items .navbar-item {
   align-content: center;
   padding-left: 22px;
   text-transform: capitalize;
+  color: #58402C;
 }
 nav .navbar-rigth .navbar-items .navbar-item:first-child::after {
   padding-left: 5px;
@@ -12369,17 +12370,25 @@ nav .navbar-rigth .navbar-items a.btn-sign-up {
   white-space: nowrap;
   vertical-align: middle;
   padding: 0 18px;
+  margin-left: 20px;
+  border: 1px solid #30488f;
+  border-radius: 7px;
 }
 nav .navbar-rigth .navbar-items a.btn-sign-up:hover {
-  background-color: bg-btn-hover;
+  background-color: #30488f;
+  transition: all 0.2s cubic-bezier(0.46, 0.12, 0.39, 0.72);
+  color: #ffffff;
 }
 nav .navbar-rigth .navbar-items a.btn-sign-up .google-logo {
-  vertical-align: middle;
+  vertical-align: text-bottom;
   width: 18px;
   height: 18px;
 }
 nav .navbar-rigth span.mobile-menu {
   display: none;
+}
+nav .navbar-rigth span.mobile-menu:hover {
+  background-color: #30488f;
 }
 @media (min-width: 551px) and (max-width: 998px) {
   nav .navbar-rigth span.mobile-menu {
