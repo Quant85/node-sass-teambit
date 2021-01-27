@@ -22,8 +22,9 @@ ul {
   transition: all 0.2s cubic-bezier(0.46, 0.12, 0.39, 0.72);
 }
 
-@mixin section-set{
-  width: 100%;
-  padding: 65px 0;
-  color: $
+@mixin section-set($x: 100%, $pd: 65px 0, $color:#58402C, $bgColor:transparent) {
+  width: $x;
+  padding: $pd;
+  background-color: $bgColor;
+  color: $color;
 }

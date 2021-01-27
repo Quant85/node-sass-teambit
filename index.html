@@ -47,12 +47,19 @@
         </nav>
         <header id="header-app">
           <section class="info-header">
-            <h1 class="title" v-text="header.title"></h1>
-            <h3 class="subtitle" v-text="header.subtitle"></h3>
-            <a :href="header.btnLink[0]" v-text="header.btnTxt[0]"></a>
-            <span>or</span>
-            <a :href="header.btnLink[1]" v-text="header.btnTxt[1]"></a>
-            <!-- /.subtitle -->
+            <div class="info-text">
+              <h1 class="title" v-text="header.title"></h1>
+              <h3 class="subtitle" v-text="header.subtitle"></h3>
+              <!-- /.subtitle -->
+              
+              <a :href="header.btnLink[0]" v-text="header.btnTxt[0]"></a>
+              <span>or</span>
+              <a :href="header.btnLink[1]" v-text="header.btnTxt[1]"></a>
+              <a href="#">or use your email address </a>
+            </div>
+            <!-- /.info-text -->
+            <img class="img-box"  src="" alt="">
+            <!-- /.img-box -->
           </section>
           <!-- /.info-header -->
     

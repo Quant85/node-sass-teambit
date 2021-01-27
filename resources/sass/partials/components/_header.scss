@@ -3,7 +3,5 @@
 
 
 header {
-
-  background-color: $primary-bg-color;
-  padding: 65px 0;
+  @include section-set($bgColor:$primary-bg-color);
 }

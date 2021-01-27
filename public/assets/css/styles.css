@@ -12410,8 +12410,10 @@ nav .navbar-rigth span.mobile-menu:hover {
 
 /* media  */
 header {
-  background-color: #ffffff;
+  width: 100%;
   padding: 65px 0;
+  background-color: #ffffff;
+  color: #58402C;
 }
 
 /* media  */
@@ -12427,7 +12429,7 @@ header {
     } */
 }
 #teambit-app .container-app {
-  width: wscale-fat;
+  width: calc((922 / 1170) * 100%);
 }
 @media (min-width: 551px) and (max-width: 998px) {
   #teambit-app .container-app {
