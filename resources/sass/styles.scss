@@ -3,3 +3,8 @@
 @import "partials/layout/_layout-index";
 
 
+#teambit-app{
+  @include flex-col-wrap;
+  align-content: center;
+  width: 100vw;
+}

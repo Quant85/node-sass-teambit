@@ -1,8 +1,41 @@
 @import "../base/variables";
+@import "../base/typography";
+@import "../base/_fontaweson.scss";
+
 
 
 nav{
-  height: 75px;
+  @include flex-row-wrap;
+  justify-content: space-between;
+  min-height: 75px;
+  width: 100%;
   background-color: $primaryBgColor;
   border: 1px solid red;
+  padding: 0 20px ;
+
+  .navbar-rigth{
+  @include flex-row-wrap;
+  align-content: center;
+  justify-content: flex-end;
+  width: 80%;
+  
+    .navbar-items{
+    @include flex-row-wrap;
+    align-content: center;
+
+      .navbar-item{
+        @include flex-row-wrap;
+        padding-left: 22px;
+        text-transform: capitalize;
+        @extend %fa-icon;
+        @extend .fas;
+        &:first-child::after {
+          padding-left: 5px;
+          content: fa-content($fa-var-chevron-down);
+        }
+      }
+    }
+
+  }
+
 }

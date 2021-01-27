@@ -4,9 +4,8 @@
 .logoSmall {
   display: none;
 
-
   @include for-tablet {
-    display: flex;
+    display: none;
   }
 
   @include for-phone {
@@ -18,7 +17,7 @@
   display: flex;
 
   @include for-tablet {
-    display: none;
+    display: flex;
   }
 
   @include for-phone {

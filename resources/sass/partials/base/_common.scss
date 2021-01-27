@@ -1,1 +1,29 @@
 //qui inseriremo le regole comuni
+
+ul {
+  list-style: none;
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+}
+
+@mixin flex-col-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@mixin flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
